@@ -11,7 +11,7 @@
       padding: 30px;
       line-height: 1.8;
       position: relative;
-      /* REMOVIDO overflow: hidden */
+      overflow-x: hidden; /* permite rolar verticalmente */
     }
 
     .card {
@@ -150,10 +150,13 @@
   <div id="euTeAmo" class="eu-te-amo">Eu te amo 💘</div>
 
   <p>
-    <!-- (mensagem completa mantida) -->
     Hoje é um dia muito especial, porque é o dia em que o mundo foi presenteado com a pessoa mais incrível que eu já conheci: <strong>você, minha Clarinha</strong>. 💫<br><br>
     Mais um ano da sua vida, e mais um ano que tenho a sorte de compartilhar contigo – e que seja só o começo de muitos outros que ainda vamos viver <strong>juntinhos, lado a lado</strong>.<br><br>
-    <!-- (resto da mensagem segue normalmente...) -->
+    Eu espero que hoje o seu coração esteja cheio de alegria, e que você sinta o quanto é <strong>amada, importante e essencial</strong> pra mim. Você é meu amor, meu presente de Deus, minha calmaria nos dias difíceis, meu sorriso no meio da tempestade, <strong>meu tudo</strong>. 🌹<br><br>
+    Sinto saudades de você todos os dias, mas também sinto aquela alegria gostosa de saber que logo, logo a distância vai virar abraço, e a saudade vai virar presença. E quando esse momento chegar, eu prometo te encher de beijos, carinho e amor como você merece. 💕<br><br>
+    Hoje é seu aniversário, mas sinceramente? <strong>Quem ganhou o maior presente fui eu</strong>, por ter você na minha vida, por poder te amar, cuidar de você, e viver essa história linda ao seu lado.<br><br>
+    <strong>Eu te amo demais</strong>, Clarinha. Mais do que as palavras conseguem dizer. Desculpa se eu repito muito isso, mas é que meu coração grita isso toda hora – e eu nunca vou cansar de te lembrar. 💌<br><br>
+    Você é o amor da minha vida. E hoje, eu só desejo que seu dia seja cheio de luz, risadas, amor e sonhos se realizando. Parabéns, meu amor! Que Deus continue te abençoando com essa alma linda que você tem.
   </p>
 
   <div class="assinatura">
@@ -180,11 +183,9 @@
     document.getElementById("euTeAmo").style.display = "block";
 
     const musica = document.getElementById("musica");
-    musica.volume = 0.8;
-
-    musica.play().catch(err => {
-      alert("⚠️ Toque na tela novamente para permitir a música!");
-      console.warn("Erro ao tocar a música:", err);
+    musica.volume = 1;
+    musica.play().catch(() => {
+      alert("⚠️ Toque na tela novamente para ativar a música.");
     });
   }
 </script>
